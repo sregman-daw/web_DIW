@@ -1,0 +1,308 @@
+@font-face {
+    font-family: giaza;
+    src: url(./Giaza.otf);
+}
+@font-face {
+    font-family: detalles;
+    src: url(./Cocogoose-Compressed-Regular-Trial.ttf);
+}
+@font-face {
+    font-family: body;
+    src: url(./Cocogoose-Condensed-Light-trial.ttf);
+}
+
+body {
+  color: #000;
+  background-color: #fff;
+}
+
+/*header*/
+header {
+  display: flex;
+  justify-content: space-between;
+  font-family:detalles;
+  letter-spacing: 2px;
+  align-items: center;
+  padding: 15px 40px;
+  border-bottom: 9px solid #000000;
+}
+
+
+.logo {
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  font-family: giaza;
+  font-size: 70px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+nav a:hover{
+    color:#77A6A6;
+}
+
+/*slide 1*/
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #77A6A6;
+  padding: 60px 40px;
+  flex-wrap: wrap;
+}
+
+.slide-text {
+  flex: 1;
+  min-width: 280px;
+  font-family: body;
+}
+
+.slide-text h2 {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  margin-bottom: 25px;
+}
+
+.slide img {
+  width: 45%;
+  border-radius: 12px;
+  min-width: 300px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  letter-spacing: 2px;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 100%;
+  font-weight: bold;
+  font-family: detalles;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #77A6A6;
+  border-color: black;
+}
+
+/* ===========================
+   INTRO / CONÓCENOS
+=========================== */
+.intro {
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.intro h3 {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+/* ===========================
+   TALLERES
+=========================== */
+.talleres {
+  background-color: #d1e3e4;
+  padding: 70px 30px;
+}
+
+.talleres h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 2.1rem;
+  letter-spacing: 1px;
+}
+
+.taller {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+.taller img {
+  width: 50%;
+  border-radius: 12px;
+}
+
+.taller .info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.taller .info p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.talleres-secundarios {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.talleres-secundarios .taller {
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+  text-align: center;
+}
+
+.talleres-secundarios img {
+  width: 100%;
+  max-width: 350px;
+}
+
+/* ===========================
+   CONTACTO
+=========================== */
+.contacto {
+  background-color: #b6cccd;
+  padding: 70px 30px;
+  text-align: center;
+}
+
+.contacto h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.contacto p {
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.datos {
+  margin-top: 35px;
+  line-height: 1.8;
+}
+
+.datos p {
+  font-size: 1rem;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+footer {
+  text-align: center;
+  font-size: 0.85rem;
+  padding: 25px;
+  border-top: 6px solid #007b83;
+}
+
+/* ===========================
+   MEDIA QUERIES
+=========================== */
+
+/* --- Tablets (pantallas de hasta 992px) --- */
+@media (max-width: 992px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero img {
+    width: 70%;
+    margin-top: 20px;
+  }
+
+  .taller {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .taller img {
+    width: 80%;
+  }
+
+  .talleres-secundarios .taller {
+    width: 70%;
+  }
+
+  .contacto {
+    padding: 60px 20px;
+  }
+}
+
+/* --- Móviles (pantallas de hasta 600px) --- */
+@media (max-width: 600px) {
+  header {
+    padding: 15px 20px;
+  }
+
+  .logo {
+    font-size: 1.8rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero {
+    padding: 40px 20px;
+  }
+
+  .hero-text h2 {
+    font-size: 1.4rem;
+  }
+
+  .hero img {
+    width: 100%;
+  }
+
+  .intro h3 {
+    font-size: 1.1rem;
+  }
+
+  .talleres h2 {
+    font-size: 1.6rem;
+  }
+
+  .taller img {
+    width: 100%;
+  }
+
+  .talleres-secundarios {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .talleres-secundarios .taller {
+    width: 100%;
+  }
+
+  .contacto h2 {
+    font-size: 1.6rem;
+  }
+
+  .datos p {
+    font-size: 0.95rem;
+  }
+}
