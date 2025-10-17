@@ -75,7 +75,6 @@ nav a:hover{
 
 .slide img {
   width: 45%;
-  border-radius: 12px;
   min-width: 300px;
 }
 
@@ -97,25 +96,23 @@ nav a:hover{
   border-color: black;
 }
 
-/* ===========================
-   INTRO / CONÓCENOS
-=========================== */
+/*CONOCENOS ESPACIO */
 .intro {
   text-align: center;
   padding: 70px 20px;
+  font-family: body;
 }
 
 .intro h3 {
   font-size: 1.3rem;
   line-height: 1.6;
   margin-bottom: 25px;
+  font-family: detalles;
 }
 
-/* ===========================
-   TALLERES
-=========================== */
+/* TALLERES ESPACIO */
 .talleres {
-  background-color: #d1e3e4;
+  background-color: #77A6A6;
   padding: 70px 30px;
 }
 
@@ -124,6 +121,7 @@ nav a:hover{
   margin-bottom: 50px;
   font-size: 2.1rem;
   letter-spacing: 1px;
+  font-family: giaza;
 }
 
 .taller {
@@ -141,11 +139,13 @@ nav a:hover{
 .taller .info h3 {
   font-size: 1.8rem;
   margin-bottom: 10px;
+  font-family: detalles;
 }
 
 .taller .info p {
   font-size: 1rem;
   line-height: 1.5;
+  font-family: body;
 }
 
 .talleres-secundarios {
@@ -167,11 +167,9 @@ nav a:hover{
   max-width: 350px;
 }
 
-/* ===========================
-   CONTACTO
-=========================== */
+/* CONTACTO ESPACIO */
 .contacto {
-  background-color: #b6cccd;
+  background-color: #77A6A6;
   padding: 70px 30px;
   text-align: center;
 }
@@ -179,11 +177,13 @@ nav a:hover{
 .contacto h2 {
   margin-bottom: 20px;
   font-size: 2rem;
+  font-family: giaza;
 }
 
 .contacto p {
   line-height: 1.6;
   font-size: 1rem;
+  font-family: body;
 }
 
 .datos {
@@ -193,23 +193,20 @@ nav a:hover{
 
 .datos p {
   font-size: 1rem;
+  font-family: body;
 }
 
-/* ===========================
-   FOOTER
-=========================== */
+/* footer */ 
 footer {
   text-align: center;
   font-size: 0.85rem;
   padding: 25px;
-  border-top: 6px solid #007b83;
+  border-top: 6px solid #77A6A6;
 }
 
-/* ===========================
-   MEDIA QUERIES
-=========================== */
+/* Responsive */
 
-/* --- Tablets (pantallas de hasta 992px) --- */
+/* tablet */
 @media (max-width: 992px) {
   header {
     flex-direction: column;
@@ -250,7 +247,7 @@ footer {
   }
 }
 
-/* --- Móviles (pantallas de hasta 600px) --- */
+/* móviles */
 @media (max-width: 600px) {
   header {
     padding: 15px 20px;
