@@ -8,7 +8,7 @@
 }
 @font-face {
     font-family: body;
-    src: url(./Cocogoose-Condensed-Light-trial.ttf);
+    src: url(./Espreso\ Milk.otf);
 }
 
 body {
@@ -24,7 +24,6 @@ header {
   letter-spacing: 2px;
   align-items: center;
   padding: 15px 40px;
-  border-bottom: 9px solid #000000;
 }
 
 
@@ -57,7 +56,6 @@ nav a:hover{
   align-items: center;
   justify-content: space-between;
   background-color: #77A6A6;
-  padding: 60px 40px;
   flex-wrap: wrap;
 }
 
@@ -71,10 +69,11 @@ nav a:hover{
   font-size: 1.8rem;
   line-height: 1.4;
   margin-bottom: 25px;
+  padding-left: 20px;
 }
 
 .slide img {
-  width: 45%;
+  width: 60%;
   min-width: 300px;
 }
 
@@ -84,6 +83,7 @@ nav a:hover{
   color: white;
   letter-spacing: 2px;
   padding: 12px 25px;
+  margin-left: 20px;
   text-decoration: none;
   border-radius: 100%;
   font-weight: bold;
@@ -97,17 +97,34 @@ nav a:hover{
 }
 
 /*CONOCENOS ESPACIO */
-.intro {
+.quienes-somos {
   text-align: center;
   padding: 70px 20px;
   font-family: body;
 }
 
-.intro h3 {
-  font-size: 1.3rem;
+.quienes-somos h3 {
+  font-size: 2.3rem;
+  text-align:left;
   line-height: 1.6;
   margin-bottom: 25px;
   font-family: detalles;
+}
+.btn-conoce{
+  color: black;
+  background-color: #77A6A6;
+  display: inline-block;
+  letter-spacing: 2px;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 100%;
+  font-weight: bold;
+  font-family: detalles;
+}
+.btn-conoce:hover{
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+  border-color: black;
 }
 
 /* TALLERES ESPACIO */
@@ -119,71 +136,176 @@ nav a:hover{
 .talleres h2 {
   text-align: center;
   margin-bottom: 50px;
-  font-size: 2.1rem;
+  font-size: 7.1rem;
   letter-spacing: 1px;
-  font-family: giaza;
+  font-family: detalles;
+  color:white;
 }
 
 .taller {
   display: flex;
   align-items: center;
-  gap: 25px;
-  margin-bottom: 50px;
 }
 
 .taller img {
-  width: 50%;
-  border-radius: 12px;
+  width: 100%;
+  height: 50%;
+  background-color: #2422225e;
+  filter: brightness(0.6);
+}
+.taller .info{
+  position:absolute;
+  text-align:left;
+  margin:50px;
 }
 
 .taller .info h3 {
-  font-size: 1.8rem;
+  font-size: 2.8rem;
+  color:white;
+  letter-spacing: 2.5px;
   margin-bottom: 10px;
   font-family: detalles;
+  text-align: left;
 }
 
 .taller .info p {
   font-size: 1rem;
   line-height: 1.5;
   font-family: body;
+  color:white;
 }
 
 .talleres-secundarios {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 25px;
 }
 
 .talleres-secundarios .taller {
-  flex-direction: column;
-  align-items: center;
-  width: 45%;
-  text-align: center;
+  position:relative;
+  height: 500px;
+  width: 50%;
+  overflow:hidden;
 }
 
 .talleres-secundarios img {
   width: 100%;
-  max-width: 350px;
+  height: 100%;
+  object-fit:cover;
+  max-width:none;
+}
+
+/*  EJEMPLO DE TARJETAS MAGDALENA: */
+
+#ejemplo-tarjetas{
+  height: 600px;
+  width: 100%;
+  display:flex;
+}
+/* tarjeta 1 */ 
+.tarjetas0 {
+  background-color:#77A6A6;
+  width: 33%;
+  display:flex;
+  flex-direction: column;
+  margin: 60px;
+  padding: 60px;
+  border-radius: 4px;
+  border-color: #000;
+  border-width: 1px;
+}
+.tarjetas0:hover{
+  background-color:#a2c0c0;
+
+
+}
+/* tarjeta 1 */
+.tarjetas1 {
+  background-color:#a8947b;
+  width: 33%;
+  display:flex;
+  flex-direction: column;
+  margin: 60Px;
+  padding: 60px;
+  border-radius: 4px;
+  border-color: #000;
+  border-width: 1px;
+}
+.tarjetas1:hover{
+  background-color:#bba890;
+}
+/* tarjeta 3 */
+.tarjetas2 {
+  background-color:#94b69f;
+  width: 33%;
+  display:flex;
+  flex-direction: column;
+  margin: 60px;
+  padding: 60px;
+  border-radius: 4px;
+  border-color: #000;
+  border-width: 1px;
+}
+.tarjetas2:hover{
+  background-color:#add6ba;
+}
+
+.tarjetas-texto {
+  font-family: detalles;
+  color: #ffffff;
+  font-size: 2.3rem;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.tarjetas-cuerpo {
+  font-family: body;
+  font-size: 1rem;
+  text-align: center;
+}
+.tarjetas-button{
+  padding:20px;
+  color: white;
+  background-color: black;
+  font-family: detalles;
+  border-radius: 100%;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+.tarjetas-button:hover{
+  color: black;
+  background:#ffffff;
 }
 
 /* CONTACTO ESPACIO */
 .contacto {
-  background-color: #77A6A6;
+  background-color: #070707;
   padding: 70px 30px;
   text-align: center;
+}
+.contacto-contenedor{
+  display: flex;
+  flex-direction: row;
+}
+.contacto-contenedor img{
+  width: 45%;
 }
 
 .contacto h2 {
   margin-bottom: 20px;
-  font-size: 2rem;
-  font-family: giaza;
+  font-size: 7.1rem;
+  font-family: detalles;
+  text-align: left;
+  color: white;
+
 }
 
 .contacto p {
   line-height: 1.6;
-  font-size: 1rem;
+  font-size: 2rem;
   font-family: body;
+  text-align: left;
+  color: white;
+  
 }
 
 .datos {
@@ -202,6 +324,7 @@ footer {
   font-size: 0.85rem;
   padding: 25px;
   border-top: 6px solid #77A6A6;
+  font-family: body;
 }
 
 /* Responsive */
@@ -211,7 +334,7 @@ footer {
   header {
     flex-direction: column;
     text-align: center;
-    gap: 15px;
+
   }
 
   nav ul {
@@ -219,12 +342,12 @@ footer {
     justify-content: center;
   }
 
-  .hero {
+  .slide {
     flex-direction: column;
     text-align: center;
   }
 
-  .hero img {
+  .slide img {
     width: 70%;
     margin-top: 20px;
   }
@@ -240,6 +363,7 @@ footer {
 
   .talleres-secundarios .taller {
     width: 70%;
+    height: 70%;
   }
 
   .contacto {
@@ -262,15 +386,15 @@ footer {
     gap: 10px;
   }
 
-  .hero {
+  .slide {
     padding: 40px 20px;
   }
 
-  .hero-text h2 {
+  .slide-text h2 {
     font-size: 1.4rem;
   }
 
-  .hero img {
+  .slide img {
     width: 100%;
   }
 
@@ -293,6 +417,7 @@ footer {
 
   .talleres-secundarios .taller {
     width: 100%;
+    height: 50%;
   }
 
   .contacto h2 {
