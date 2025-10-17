@@ -26,7 +26,6 @@ header {
   padding: 15px 40px;
 }
 
-
 .logo {
   font-size: 2.2rem;
   letter-spacing: 2px;
@@ -202,52 +201,41 @@ nav a:hover{
   width: 100%;
   display:flex;
 }
+.tarjetas0, .tarjetas1, .tarjetas2{
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(255, 252, 252);
+  width: 33%;
+  display:flex;
+  flex-direction: column;
+  margin: 60px;
+  padding: 60px;
+}
 /* tarjeta 1 */ 
 .tarjetas0 {
   background-color:#77A6A6;
-  width: 33%;
-  display:flex;
-  flex-direction: column;
-  margin: 60px;
-  padding: 60px;
-  border-radius: 4px;
-  border-color: #000;
-  border-width: 1px;
 }
 .tarjetas0:hover{
   background-color:#a2c0c0;
-
-
+  border-color: #77A6A6;
 }
-/* tarjeta 1 */
+/* tarjeta 2 */
 .tarjetas1 {
   background-color:#a8947b;
-  width: 33%;
-  display:flex;
-  flex-direction: column;
-  margin: 60Px;
-  padding: 60px;
-  border-radius: 4px;
-  border-color: #000;
-  border-width: 1px;
 }
 .tarjetas1:hover{
   background-color:#bba890;
+  border-color: #a8947b;
 }
+
 /* tarjeta 3 */
 .tarjetas2 {
   background-color:#94b69f;
-  width: 33%;
-  display:flex;
-  flex-direction: column;
-  margin: 60px;
-  padding: 60px;
-  border-radius: 4px;
-  border-color: #000;
-  border-width: 1px;
 }
 .tarjetas2:hover{
   background-color:#add6ba;
+  border-color: #94b69f;
 }
 
 .tarjetas-texto {
@@ -294,6 +282,7 @@ nav a:hover{
   margin-bottom: 20px;
   font-size: 7.1rem;
   font-family: detalles;
+  letter-spacing: 2px;
   text-align: left;
   color: white;
 
@@ -323,7 +312,6 @@ footer {
   text-align: center;
   font-size: 0.85rem;
   padding: 25px;
-  border-top: 6px solid #77A6A6;
   font-family: body;
 }
 
