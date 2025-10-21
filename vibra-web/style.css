@@ -334,6 +334,32 @@ nav a:hover{
   display: flex;
   flex-direction:column;
 }
+.navegacion-menu{
+  display: flex;
+  flex-wrap: wrap;
+}
+.texto-descripcion{
+  text-align: left;
+  font-size: 12px;
+}
+.texto-descripcion1{
+  width: 33ch;
+  text-align: left;
+  font-size:12px;
+}
+i{
+  color: #77A6A6;
+  font-size: 20px;
+}
+i a {
+  text-decoration: none;
+  color:#000;
+  cursor:pointer;
+}
+i a:hover{
+  color: #77A6A6;
+}
+
 
 /* Responsive */
 
