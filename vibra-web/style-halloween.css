@@ -12,6 +12,7 @@
 }
 
 body {
+  cursor: url('/vibra-web/spider-1.png') 0 0, auto; 
   color: #000;
   background-color: #fff;
 }
@@ -57,7 +58,7 @@ nav a {
   font-size: 0.95em;
 }
 nav a:hover{
-    color:#77A6A6;
+    color:#F3903A;
 }
 
 /*slide 1*/
@@ -65,7 +66,7 @@ nav a:hover{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #77A6A6;
+  background-image: url(./fondo-halloween.jpg);
   flex-wrap: wrap;
 }
 
@@ -78,6 +79,7 @@ nav a:hover{
 .slide-text h2 {
   font-size: 1.8em;
   line-height: 1.4;
+  color:white;
   margin-bottom: 25px;
   padding-left: 20px;
 }
@@ -103,7 +105,7 @@ nav a:hover{
 
 .btn:hover {
   background-color: white;
-  color: #77A6A6;
+  color: #F3903A;
   border-color: black;
 }
 
@@ -123,7 +125,7 @@ nav a:hover{
 }
 .btn-conoce{
   color: black;
-  background-color: #77A6A6;
+  background-color: #F3903A;
   display: inline-block;
   letter-spacing: 2px;
   padding: 12px 25px;
@@ -140,7 +142,7 @@ nav a:hover{
 
 /* TALLERES ESPACIO */
 .talleres {
-  background-color: #77A6A6;
+  background-image: url(./fondo-halloween.jpg);
   padding: 70px 30px;
 }
 
@@ -226,27 +228,27 @@ nav a:hover{
 }
 /* tarjeta 1 */ 
 .tarjetas0 {
-  background-color:#77A6A6;
+  background-color:#5E1742;
 }
 .tarjetas0:hover{
-  background-color:#a2c0c0;
-  border-color: #77A6A6;
+  background-color:#a32571;
+  border-color: #5E1742;
 }
 /* tarjeta 2 */
 .tarjetas1 {
-  background-color:#cc9f69;
+  background-color:#962E40;
 }
 .tarjetas1:hover{
-  background-color:#dfb683;
-  border-color: #cc9f69;
+  background-color:#ca3d55;
+  border-color: #962E40;
 }
 /* tarjeta 3 */
 .tarjetas2 {
-  background-color:#94b69f;
+  background-color:#C9463D;
 }
 .tarjetas2:hover{
-  background-color:#add6ba;
-  border-color: #94b69f;
+  background-color:#ff5548;
+  border-color: #C9463D;
 }
 
 .tarjetas-texto {
@@ -335,7 +337,7 @@ nav a:hover{
 
 }
 .copyright{
-  background-color: #77A6A6;
+  background-color: #F3903A;
   font-family: body;
   text-align: center;
 }
@@ -361,7 +363,7 @@ nav a:hover{
   font-size:12px;
 }
 i{
-  color: #77A6A6;
+  color: #F3903A;
 }
 i a {
   text-decoration: none;
@@ -369,13 +371,13 @@ i a {
   cursor:pointer;
 }
 i a:hover{
-  color: #77A6A6;
+  color: #F3903A;
 }
 
 /* ----------- ESPACIO POLITICA DE PRIVACIDAD ---------------- */
 .cuerpo-privacidad{
   height: AUTO;
-  background-color: #77A6A6;
+  background-color: #F3903A;
 
 }
 .enunciado-privacidad{
