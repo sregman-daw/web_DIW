@@ -12,7 +12,7 @@
 }
 
 body {
-  cursor: url('/vibra-web/spider-1.png') 0 0, auto; 
+  cursor: url('./spider-1.png') 0 0, auto; 
   color: #000;
   background-color: #fff;
 }
@@ -20,6 +20,7 @@ body {
 a{ 
   text-decoration: none;
   color:white;
+  cursor:pointer;
 }
 a:hover{
   color:#77A6A6;
