@@ -59,7 +59,9 @@ nav a {
 nav a:hover{
     color:#77A6A6;
 }
-
+.fechas{
+  color:rgb(201, 146, 102);
+}
 /*slide 1*/
 .slide {
   display: flex;
@@ -137,13 +139,24 @@ nav a:hover{
   color: #ffffff;
   border-color: black;
 }
+.creaciones {
+  background-color: #ffffff;
+  padding: 70px 30px;
+}
+.creaciones h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 7.1em;
+  letter-spacing: 1px;
+  font-family: detalles;
+  color:#77A6A6;
+}
 
 /* TALLERES ESPACIO */
 .talleres {
   background-color: #77A6A6;
   padding: 70px 30px;
 }
-
 .talleres h2 {
   text-align: center;
   margin-bottom: 50px;
@@ -212,6 +225,7 @@ nav a:hover{
   height: 600px;
   width: 100%;
   display:flex;
+  background-color:#77A6A6;
 }
 .tarjetas0, .tarjetas1, .tarjetas2{
   border-radius: 4px;
@@ -226,11 +240,11 @@ nav a:hover{
 }
 /* tarjeta 1 */ 
 .tarjetas0 {
-  background-color:#77A6A6;
+  background-color: #c7588f;
 }
 .tarjetas0:hover{
-  background-color:#a2c0c0;
-  border-color: #77A6A6;
+  background-color: #ff75ba;
+  border-color: #c7588f;
 }
 /* tarjeta 2 */
 .tarjetas1 {
@@ -272,8 +286,24 @@ nav a:hover{
 }
 .tarjetas-button:hover{
   color: black;
-  background:#ffffff;
 }
+
+.galeria{
+  width: 100%;
+  box-sizing: border-box;
+  position:relative;
+  height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.espacio-galeria{
+  display:flex;
+  width:33%;
+  height: 33%;
+  padding: 10px;
+  object-fit: contain;
+}
+
 
 /* CONTACTO ESPACIO */
 .contacto {

@@ -4,9 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VIBRA |  Espacio Creativo</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-
-</head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"></head>
 <body>
   <!-- Header -->
   <header>
@@ -17,7 +15,10 @@
       <ul>
         <li><a href="#conocenos">CONÓCENOS</a></li>
         <li><a href="#talleres">TALLERES</a></li>
+        <li><a href="#creaciones">CREACIONES</a></li>
         <li><a href="#contacto">CONTACTO</a></li>
+        <li><a class="fechas" href="https://calendly.com/silviaregmadaw">FECHAS DISPONIBLES</a></li>
+        
       </ul>
     </nav>
   </header>
@@ -51,7 +52,7 @@
       <div class="info">
         <h3>TALLER DE TORNO</h3>
         <p>Descubre el arte del torno y crea una pieza única.</p>
-        <a href="#talleres" class="btn">¡APÚNTATE!</a>
+        <a href="https://calendly.com/silviaregmadaw/taller-de-torno" target="_blank" class="btn">¡APÚNTATE!</a>
       </div>
     </div>
 
@@ -61,7 +62,8 @@
         <div class="info">
           <h3>PINTA TU TOTE BAG</h3>
           <p>Diseña tu propia tote bag con el estilo que más te gusta.</p>
-          <a href="#talleres" class="btn">¡APÚNTATE!</a>
+          <a href="https://calendly.com/silviaregmadaw/taller-de-collage-clone" target="_blank" class="btn">¡APÚNTATE!</a>
+
         </div>
       </div>
       <div class="taller">
@@ -69,7 +71,7 @@
         <div class="info">
           <h3>DESCUBRE LA ACUARELA</h3>
           <p>Aprende paso a paso el uso de la acuarela y disfruta con tu propio lienzo.</p>
-          <a href="#talleres" class="btn">¡APÚNTATE AHORA!</a>
+          <a href="https://calendly.com/silviaregmadaw/taller-de-acuarela" target="_blank" class="btn">¡APÚNTATE AHORA!</a>
         </div>
       </div>
     </div>
@@ -82,8 +84,7 @@
         </h3>
         <p class="tarjetas-cuerpo"> DESCUBRE EL MUNDO DEL COLLAGE CREANDO EL TUYO
         </p>
-        <button class="tarjetas-button">
-          ¡ME QUIERO APUNTAR!
+        <button class="tarjetas-button"><a href="https://calendly.com/silviaregmadaw/new-meeting">¡ME QUIERO APUNTAR!</a>
         </button>
       </div>
 
@@ -93,8 +94,7 @@
         </h3>
         <p class="tarjetas-cuerpo"> CONOCE EL ARTE DEL ORIGAMI CREANDO TUS FIGURAS FAVORITAS
         </p>
-        <button class="tarjetas-button">
-          ¡ME QUIERO APUNTAR!
+        <button class="tarjetas-button"><a href="https://calendly.com/silviaregmadaw/taller-de-origami"> ¡ME QUIERO APUNTAR!</a>
         </button>
       </div>
        <div class="tarjetas2">
@@ -103,20 +103,35 @@
         </h3>
         <p class="tarjetas-cuerpo"> APRENDE EL PODEROSO USO DE LAS LETRAS EN TODAS SUS FORMAS 
         </p>
-        <button class="tarjetas-button">
-          ¡ME QUIERO APUNTAR!
+        <button class="tarjetas-button"><a href="https://calendly.com/silviaregmadaw/new-meeting-1">¡ME QUIERO APUNTAR!</a>
         </button>
       </div>
   </section>
-
+  <!--- CREACIONES --->
+  <section id="creaciones" class="creaciones">
+    <h2>NUESTRAS CREACIONES:</h2>
+    <div class="galeria">
+      <div class="espacio-galeria">
+        <img src="./fotos_galeria/landscape1.jpg" alt="">
+        <img src="./fotos_galeria/portrait1.jpg" alt="">
+        <img src="./fotos_galeria/landscape2.jpg" alt="">
+      </div>
+    </div>
+    <!--<div class="galeria">
+      <div class="espacio-galeria">
+        <img class="foto-galeria" src="./fotos_galeria/portrait2.jpg" alt="">
+        <img class="foto-galeria" src="./fotos_galeria/landscape3.jpg" alt="">
+        <img class="foto-galeria" src="./fotos_galeria/portrait3.jpg" alt="">
+      </div>
+    </div> -->
+  </section>
   <!-- Contacto -->
   <section id="contacto" class="contacto">
       <h2>CONTACTA</h2>
       <p>¿Quieres presentarnos tu propio taller e impartirlo en nuestro espacio?<br>
         Envíanos un email o llámanos y lo hablamos.<br><br>
-        O si prefieres asistir a nuestros talleres, reserva tu plaza por WhatsApp.
+        O si prefieres asistir a nuestros talleres, reserva tu plaza: 
       </p>
-
     <div class="datos">
       <p>Email: <a href="mailto:hola@vibraespacio.com">hola@vibraespacio.com</a></p>
       <p>Whatsapp: <a href="tel:+34956128145">689 452 785</a></p>
@@ -129,7 +144,9 @@
   <!-- Footer -->
   <footer class="footer-completo">
     <section class="listado">
-        <div class="logo">VIBRA</div>
+          <div class="logo">
+            <img alt="logo_principal" width="100" height="100" src="./logo_ceramica.png">
+          </div>
         <p class="texto-descripcion1">Espacio creativo multidisciplinar con talleres para todas las edades en El Ejido</p>
         <p class="texto-descripcion">HORARIO DE APERTURA: <BR> LUNES A JUEVES DE 12 A 20H Y VIERNES A DOMINGO DE 10 A 14H</p>
     </section>
@@ -140,6 +157,7 @@
           <li><a href="#conocenos">CONÓCENOS</a></li>
           <li><a href="#talleres">TALLERES</a></li>
           <li><a href="#contacto">CONTACTO</a></li>
+
           <li><a href="privacidad.html" target="_blank">POLÍTICA DE PRIVACIDAD</a></li>
           <li><a href="#">POLÍTICA DE COOKIES</a></li>
         </ul>
