@@ -292,18 +292,17 @@ nav a:hover{
   width: 100%;
   box-sizing: border-box;
   position:relative;
-  height: 600px;
+  height: 1200px;
   display: flex;
   flex-wrap: wrap;
 }
 .espacio-galeria{
   display:flex;
-  width:33%;
-  height: 33%;
   padding: 10px;
-  object-fit: contain;
+  width: 500px;
+  height: 500px; 
+  width: 33%;
 }
-
 
 /* CONTACTO ESPACIO */
 .contacto {
