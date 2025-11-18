@@ -141,7 +141,7 @@ nav a:hover{
 }
 .creaciones {
   background-color: #ffffff;
-  padding: 70px 30px;
+  padding: 40px 20px;
 }
 .creaciones h2 {
   text-align: center;
@@ -288,21 +288,19 @@ nav a:hover{
   color: black;
 }
 
-.galeria{
-  width: 100%;
-  box-sizing: border-box;
-  position:relative;
-  height: 1200px;
-  display: flex;
-  flex-wrap: wrap;
-}
-.espacio-galeria{
-  display:flex;
-  padding: 10px;
-  width: 500px;
-  height: 500px; 
-  width: 33%;
-}
+  .espacio-galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .espacio-galeria img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover; /* Para que todas tengan la misma altura */
+  }
 
 /* CONTACTO ESPACIO */
 .contacto {
@@ -466,7 +464,7 @@ i a:hover{
 
   .taller img {
     width: 80%;
-  }
+  
 
   .talleres-secundarios .taller {
     width: 70%;
@@ -562,6 +560,9 @@ i a:hover{
   flex-direction: column;
   margin: 20px;
   padding: 80px;
+}
+ .espacio-galeria{
+    grid-template-columns: 1fr;
 }
 
   .contacto h2 {
