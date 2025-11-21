@@ -4,6 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VIBRA |  Espacio Creativo</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="scripts" href="script.js">
 <body>
   <!-- Header -->
   <header>
@@ -17,7 +18,6 @@
         <li><a href="#creaciones">CREACIONES</a></li>
         <li><a href="#contacto">CONTACTO</a></li>
         <li><a class="fechas" href="https://calendly.com/silviaregmadaw">FECHAS DISPONIBLES</a></li>
-        
       </ul>
     </nav>
   </header>
@@ -57,7 +57,7 @@
 
     <div class="talleres-secundarios">
       <div class="taller">
-        <img src="./TALLER-TOTE.webp" alt="Pinta tu tote bag">
+        <img src="./TALLER-PINTURA.webp" alt="Pinta tu tote bag">
         <div class="info">
           <h3>PINTA TU TOTE BAG</h3>
           <p>Diseña tu propia tote bag con el estilo que más te gusta.</p>
@@ -66,7 +66,7 @@
         </div>
       </div>
       <div class="taller">
-        <img src="./TALLER-PINTURA.webp" alt="Descubre la acuarela">
+        <img src="./TALLER-TOTE.webp" alt="Descubre la acuarela">
         <div class="info">
           <h3>DESCUBRE LA ACUARELA</h3>
           <p>Aprende paso a paso el uso de la acuarela y disfruta con tu propio lienzo.</p>
@@ -83,18 +83,59 @@
         </h3>
         <p class="tarjetas-cuerpo"> DESCUBRE EL MUNDO DEL COLLAGE CREANDO EL TUYO
         </p>
-        <button class="tarjetas-button"><a href="https://calendly.com/silviaregmadaw/new-meeting">¡ME QUIERO APUNTAR!</a>
+        <button class= "tarjetas-button" popovertarget="popup-tarjetas">¡QUIERO + INFO!</button>
+          <div popover id="popup-tarjetas">
+            <button class="popup-close" onclick="cerrarPopup()">×</button>
+            <p> ✂️ COLLAGE: ARTE CON TEXTURAS Y RELATOS VISUALES</p>
+            <p>
+               Aprende a contar historias sin palabras usando la magia del recorte y la composición
+              en tan solo 6 horas. 
+            </p>
+            <span> Sesion 1: </span>
+            <p>
+              Descubre cómo guiar la mirada y equilibrar los elementos en tu obra.
+            </p>
+            <span> Sesion 2: </span>
+            <p>
+              Aprenderás los principios de composición (foco, equilibrio visual y ley de tercios) para desarrollar el mensaje visual de narrativa. 
+            </p>
+            <span> Sesion 3: </span>
+            <p>
+              Crea una pieza completa con múltiples capas aplicando todas las técnicas que hemos aprendido. 
+            </p>
+            <p> Podrás llevarte de recuerdo dos composiones profesionales de collage realizados por ti</p>
+            <button class="tarjetas-button"><a href="https://calendly.com/silviaregmadaw/taller-de-origami"> ¡ME QUIERO APUNTAR!</a>
+          </div>
         </button>
       </div>
-
-       <div class="tarjetas1">
+      <div class="tarjetas1">
         <h3 class="tarjetas-texto">
           TALLER DE ORIGAMI
         </h3>
-        <p class="tarjetas-cuerpo"> CONOCE EL ARTE DEL ORIGAMI CREANDO TUS FIGURAS FAVORITAS
-        </p>
-        <button class="tarjetas-button"><a href="https://calendly.com/silviaregmadaw/taller-de-origami"> ¡ME QUIERO APUNTAR!</a>
-        </button>
+        <p class="tarjetas-cuerpo"> CONOCE EL ARTE DEL ORIGAMI CREANDO TUS FIGURAS FAVORITAS</p>
+        <button class="tarjetas-button" popovertarget="popup-tarjetas1"> ¡QUIERO + INFO!</button>
+          <div popover id="popup-tarjetas1">
+            <button class="popup-close" onclick="cerrarPopup()">×</button>
+            <p> ✂️ COLLAGE: ARTE CON TEXTURAS Y RELATOS VISUALES</p>
+            <p>
+               Aprende a contar historias sin palabras usando la magia del recorte y la composición
+              en tan solo 6 horas. 
+            </p>
+            <span> Sesion 1: </span>
+            <p>
+              Descubre cómo guiar la mirada y equilibrar los elementos en tu obra.
+            </p>
+            <span> Sesion 2: </span>
+            <p>
+              Aprenderás los principios de composición (foco, equilibrio visual y ley de tercios) para desarrollar el mensaje visual de narrativa. 
+            </p>
+            <span> Sesion 3: </span>
+            <p>
+              Crea una pieza completa con múltiples capas aplicando todas las técnicas que hemos aprendido. 
+            </p>
+            <p> Podrás llevarte de recuerdo dos composiones profesionales de collage realizados por ti</p>
+            <button class="tarjetas-button"><a href="https://calendly.com/silviaregmadaw/taller-de-origami"> ¡ME QUIERO APUNTAR!</button>
+          </div>
       </div>
        <div class="tarjetas2">
         <h3 class="tarjetas-texto">
@@ -176,5 +217,6 @@
     </section>
   </footer>
   <p class="copyright">VIBRA ESPACIO CREATIVO © 2025 TODOS LOS DERECHOS RESERVADOS</p>
+    <script src="./script.js"></script>
 </body>
 </html>
